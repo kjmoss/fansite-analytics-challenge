@@ -4,5 +4,9 @@
 # the contents of this script could be replaced with similar files from any major language
 
 # I'll execute my programs, with the input directory log_input and output the files in the directory log_output
-python ./src/process_log.py ./log_input/log.txt ./log_output/hosts.txt ./log_output/hours.txt ./log_output/resources.txt ./log_output/blocked.txt
+# python ./src/process_log.py ./log_input/log.txt ./log_output/hosts.txt ./log_output/hours.txt ./log_output/resources.txt ./log_output/blocked.txt
 
+cd src
+javac fansite_analytics/fansiteTest.java
+cd ..
+java -classpath ./src fansite_analytics.fansiteTest
